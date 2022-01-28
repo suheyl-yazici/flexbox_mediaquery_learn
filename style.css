@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(247, 218, 218, 0.87);
+}
+#baslık {
+  background-color: orange;
+  height: 50px;
+  text-align: right;
+  padding: 10px 40px;
+  margin-bottom: 200px;
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  padding: 5px;
+  margin: auto;
+}
+main {
+  background-color: aqua;
+  border: 20px dotted red;
+  height: 200px;
+  width: 75%;
+  margin: auto;
+}
+#parag {
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 1000px) {
+  #baslık {
+    text-align: center;
+    height: 80px;
+    font-size: 25px;
+  }
+  body {
+    background-color: seagreen;
+  }
+#baslık{
+    background-color: sienna;
+    justify-content: center;
+}
+a{
+    color: white;
+}
+main{
+    width: 50%;
+    background-color: tomato;
+    border: 10px double purple;
+}
+#parag{
+    font-size: 20px;
+    color: blue;
+}
+}
+
+@media screen and (max-width:600px) {
+#baslık {
+    display: flex;
+    flex-direction: column;
+    height: 22%;
+    background-color: turquoise;
+}
+main{
+    background-color: yellow;
+    width: 25%;
+    border: 5px solid ;
+    height: 150px;
+}
+body{
+    background-color: mediumvioletred;
+}
+#parag{
+    font-size:15px;
+    color: crimson;
+}
+}
