@@ -1,83 +1,100 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: rgba(247, 218, 218, 0.87);
-}
-#baslık {
-  background-color: orange;
-  height: 50px;
-  text-align: right;
-  padding: 10px 40px;
-  margin-bottom: 200px;
-  font-size: 30px;
-}
-a {
-  text-decoration: none;
-  padding: 5px;
-  margin: auto;
-}
-main {
-  background-color: aqua;
-  border: 20px dotted red;
-  height: 200px;
-  width: 75%;
-  margin: auto;
-}
-#parag {
-  color: black;
-  text-align: center;
-  padding-top: 50px;
-  font-size: xx-large;
-}
-
-@media screen and (max-width: 1000px) {
-  #baslık {
-    text-align: center;
-    height: 80px;
-    font-size: 25px;
-  }
-  body {
-    background-color: seagreen;
-  }
-#baslık{
-    background-color: sienna;
-    justify-content: center;
-}
-a{
-    color: white;
-}
-main{
-    width: 50%;
-    background-color: tomato;
-    border: 10px double purple;
-}
-#parag{
-    font-size: 20px;
-    color: blue;
-}
-}
-
-@media screen and (max-width:600px) {
-#baslık {
-    display: flex;
-    flex-direction: column;
-    height: 22%;
-    background-color: turquoise;
-}
-main{
-    background-color: yellow;
-    width: 25%;
-    border: 5px solid ;
-    height: 150px;
-}
 body{
-    background-color: mediumvioletred;
+  background-color: bisque;
 }
-#parag{
-    font-size:15px;
-    color: crimson;
+.header{
+  background-color: grey;
+  height: 4rem;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3rem;
+}
+
+li{
+  margin-right: 20px;
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: block;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+.content__section {
+  border: 1rem solid blueviolet;
+  padding: 5rem 20rem;
+  background-color: green;
+}
+h2{display: none;}
+
+
+@media (max-width: 992px){
+  body{
+      background-color: rgb(193,233,132);
+}
+.content__section {
+  padding: 4rem 10rem;
+}
+
+}
+@media (max-width: 768px){
+  body{
+      background-color: rgb(134, 132, 233);
+}
+  ul{
+      justify-content: space-around;
+      display: flex;
+      width: 100%;
+  }
+  li{
+      color:black;
+      border: 1px solid yellow;
+      width: 100%;
+
+}
+.content__section {
+  padding: 2rem 5rem;
+}
+}
+
+@media (max-width: 600px){
+  body{
+      background-color: purple;
+}
+  ul{
+      flex-direction: column;
+      align-items: center;
+      background-color: aqua;
+      height:8rem;
+  }
+  li{
+      color:black;
+      display: block;
+      background-color: darkgoldenrod;
+      text-align: center;
+}
+li:hover{
+  background-color: brown;
+}
+.content__section {
+  padding: 2rem 5rem;
+}
+.header{
+  margin-top: 1rem;
+}
+h1{
+  display: none;
+}
+h2{display: block;
+font-size: 20px;
 }
 }
